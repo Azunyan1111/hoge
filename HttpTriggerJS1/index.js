@@ -18,20 +18,11 @@ module.exports = function(context, event) {
     context.log("text:%s", text);
 
     // この辺でいろいろやってみる
-    if text == "ポニョ"{
-      context.res = {
-          body: {
-              text: "ぽにょっ " + text + "@ GitHub"
-          }
-      };
-    }else{
-      context.res = {
-          body: {
-              text: "Hello " + text + "@ GitHub"
-          }
-      };
-    }
-
+    context.res = {
+        body: {
+            text: "Hello " + text + "@ GitHubaaaa"
+        }
+    };
     // context.bindngs.outputDocument = {text};
     context.done();
 };
