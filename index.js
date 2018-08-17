@@ -20,7 +20,7 @@ module.exports = function(context, event) {
     // この辺でいろいろやってみる
     context.res = {
         body: {
-            text: "Hello " + text + "@ GitHub"
+            text: "Hello " + text + "@ GitHub" + "aaaa"
         }
     };
     // context.bindngs.outputDocument = {text};
