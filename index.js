@@ -12,16 +12,15 @@ module.exports = function(context, event) {
     if (rawText === undefined || userName === undefined || userName === 'user_name=slackbot') {
         context.done();
         return;
-    }   
+    }
 
     const text = decodeURIComponent(rawText.substr(5));
     context.log("text:%s", text);
 
-    // この辺でいろいろやってみる    
-
+    // この辺でいろいろやってみる
     context.res = {
         body: {
-            text: "Hello " + text
+            text: "Hello " + text + "@ GitHub"
         }
     };
     // context.bindngs.outputDocument = {text};
